@@ -4,7 +4,19 @@ Simple neon / pixel styled calculator you can open by just double‑clicking `in
 
 > Goal: look cool, stay readable, be easy to explain in an interview.
 
-### 🔥 What It Does
+### � Preview
+
+Desktop view:
+
+![Desktop Preview](./screenshot-desktop.png "Desktop preview")
+
+Mobile view:
+
+![Mobile Preview](./screenshot-mobile.png "Mobile preview")
+
+> If these images don't show up yet, just grab a screenshot of the running page (one wide, one narrow ~390px) and save them in the project root with those file names.
+
+### �🔥 What It Does
 
 - Basic math: + − × ÷
 - Extra: percent %, change sign (±), clear (AC)
