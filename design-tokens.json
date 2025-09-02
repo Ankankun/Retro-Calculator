@@ -1,0 +1,498 @@
+{
+  "$schema": "https://schemas.figma.com/design-tokens/v1.0",
+  "$metadata": {
+    "tokenSetOrder": ["global", "semantic", "component"]
+  },
+  "global": {
+    "colors": {
+      "primitive": {
+        "black": {
+          "value": "#000000",
+          "type": "color",
+          "description": "Pure black for backgrounds"
+        },
+        "white": {
+          "value": "#FFFFFF", 
+          "type": "color"
+        },
+        "cyan": {
+          "400": {
+            "value": "#00FFFF",
+            "type": "color",
+            "description": "Neon cyan for primary UI elements"
+          }
+        },
+        "green": {
+          "400": {
+            "value": "#32FF32",
+            "type": "color",
+            "description": "Neon green for displays and success states"
+          },
+          "500": {
+            "value": "#16A34A",
+            "type": "color",
+            "description": "Green for equals button"
+          }
+        },
+        "pink": {
+          "600": {
+            "value": "#DC2626",
+            "type": "color",
+            "description": "Pink for operator buttons"
+          },
+          "deep": {
+            "value": "#FF1493",
+            "type": "color",
+            "description": "Deep pink for neon effects"
+          }
+        },
+        "blue": {
+          "600": {
+            "value": "#2563EB",
+            "type": "color",
+            "description": "Blue for number buttons"
+          },
+          "700": {
+            "value": "#1D4ED8",
+            "type": "color",
+            "description": "Blue hover state"
+          },
+          "800": {
+            "value": "#1E40AF",
+            "type": "color",
+            "description": "Blue active state"
+          }
+        },
+        "gray": {
+          "400": {
+            "value": "#9CA3AF",
+            "type": "color"
+          },
+          "500": {
+            "value": "#6B7280",
+            "type": "color"
+          },
+          "600": {
+            "value": "#4B5563",
+            "type": "color"
+          },
+          "700": {
+            "value": "#374151",
+            "type": "color"
+          },
+          "800": {
+            "value": "#1F2937",
+            "type": "color",
+            "description": "Dark gray for AC button"
+          },
+          "900": {
+            "value": "#111827",
+            "type": "color",
+            "description": "Very dark gray for headers and displays"
+          }
+        }
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "pixel": {
+          "value": "Press Start 2P, monospace",
+          "type": "fontFamily",
+          "description": "Primary pixel font for retro aesthetic"
+        }
+      },
+      "fontSize": {
+        "xs": {
+          "value": "10px",
+          "type": "dimension",
+          "description": "Extra small text - tags and secondary info"
+        },
+        "sm": {
+          "value": "12px", 
+          "type": "dimension",
+          "description": "Small text - button labels"
+        },
+        "base": {
+          "value": "14px",
+          "type": "dimension",
+          "description": "Base font size"
+        },
+        "lg": {
+          "value": "16px",
+          "type": "dimension",
+          "description": "Large text - main display"
+        },
+        "xl": {
+          "value": "18px",
+          "type": "dimension",
+          "description": "Extra large text - main display responsive"
+        },
+        "2xl": {
+          "value": "20px",
+          "type": "dimension",
+          "description": "Headings"
+        }
+      }
+    },
+    "spacing": {
+      "1": {
+        "value": "4px",
+        "type": "dimension"
+      },
+      "2": {
+        "value": "8px",
+        "type": "dimension"
+      },
+      "3": {
+        "value": "12px",
+        "type": "dimension",
+        "description": "Button grid gap"
+      },
+      "4": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "Standard padding for buttons and containers"
+      },
+      "6": {
+        "value": "24px",
+        "type": "dimension",
+        "description": "Display area padding"
+      },
+      "8": {
+        "value": "32px",
+        "type": "dimension",
+        "description": "Section spacing"
+      }
+    },
+    "borderRadius": {
+      "none": {
+        "value": "0px",
+        "type": "dimension",
+        "description": "Sharp edges for pixel aesthetic"
+      },
+      "sm": {
+        "value": "2px",
+        "type": "dimension"
+      },
+      "md": {
+        "value": "6px",
+        "type": "dimension",
+        "description": "Display border radius"
+      },
+      "lg": {
+        "value": "8px",
+        "type": "dimension",
+        "description": "Main container border radius"
+      }
+    },
+    "borderWidth": {
+      "1": {
+        "value": "1px",
+        "type": "dimension"
+      },
+      "2": {
+        "value": "2px",
+        "type": "dimension",
+        "description": "Standard border width for containers and buttons"
+      }
+    }
+  },
+  "semantic": {
+    "colors": {
+      "background": {
+        "primary": {
+          "value": "{global.colors.primitive.black}",
+          "type": "color",
+          "description": "Main background color"
+        },
+        "surface": {
+          "value": "{global.colors.primitive.gray.900}",
+          "type": "color",
+          "description": "Surface background for headers and displays"
+        },
+        "grid": {
+          "value": "rgba(0, 255, 255, 0.03)",
+          "type": "color",
+          "description": "Pixel grid overlay color"
+        }
+      },
+      "border": {
+        "primary": {
+          "value": "{global.colors.primitive.cyan.400}",
+          "type": "color",
+          "description": "Primary border color"
+        },
+        "display": {
+          "value": "{global.colors.primitive.green.400}",
+          "type": "color",
+          "description": "Display border color"
+        }
+      },
+      "text": {
+        "primary": {
+          "value": "{global.colors.primitive.cyan.400}",
+          "type": "color",
+          "description": "Primary text color"
+        },
+        "display": {
+          "value": "{global.colors.primitive.green.400}",
+          "type": "color",
+          "description": "Display text color"
+        },
+        "secondary": {
+          "value": "{global.colors.primitive.gray.400}",
+          "type": "color",
+          "description": "Secondary text color"
+        },
+        "white": {
+          "value": "{global.colors.primitive.white}",
+          "type": "color",
+          "description": "White text for buttons"
+        }
+      }
+    },
+    "effects": {
+      "neon": {
+        "blue": {
+          "value": [
+            {
+              "type": "dropShadow",
+              "color": "rgba(0, 255, 255, 0.6)",
+              "offsetX": "0px",
+              "offsetY": "0px",
+              "blur": "3px",
+              "spread": "0px"
+            },
+            {
+              "type": "dropShadow", 
+              "color": "rgba(0, 255, 255, 0.3)",
+              "offsetX": "0px",
+              "offsetY": "0px",
+              "blur": "6px",
+              "spread": "0px"
+            }
+          ],
+          "type": "effect",
+          "description": "Blue neon glow for primary elements"
+        },
+        "pink": {
+          "value": [
+            {
+              "type": "dropShadow",
+              "color": "rgba(255, 20, 147, 0.6)",
+              "offsetX": "0px",
+              "offsetY": "0px",
+              "blur": "3px",
+              "spread": "0px"
+            },
+            {
+              "type": "dropShadow",
+              "color": "rgba(255, 20, 147, 0.3)",
+              "offsetX": "0px",
+              "offsetY": "0px", 
+              "blur": "6px",
+              "spread": "0px"
+            }
+          ],
+          "type": "effect",
+          "description": "Pink neon glow for operator elements"
+        },
+        "green": {
+          "value": [
+            {
+              "type": "dropShadow",
+              "color": "rgba(50, 255, 50, 0.6)",
+              "offsetX": "0px",
+              "offsetY": "0px",
+              "blur": "3px", 
+              "spread": "0px"
+            },
+            {
+              "type": "dropShadow",
+              "color": "rgba(50, 255, 50, 0.3)",
+              "offsetX": "0px",
+              "offsetY": "0px",
+              "blur": "6px",
+              "spread": "0px"
+            }
+          ],
+          "type": "effect",
+          "description": "Green neon glow for action elements"
+        }
+      }
+    }
+  },
+  "component": {
+    "button": {
+      "number": {
+        "backgroundColor": {
+          "value": "{global.colors.primitive.blue.600}",
+          "type": "color"
+        },
+        "backgroundColorHover": {
+          "value": "{global.colors.primitive.blue.700}",
+          "type": "color"
+        },
+        "backgroundColorActive": {
+          "value": "{global.colors.primitive.blue.800}",
+          "type": "color"
+        },
+        "textColor": {
+          "value": "{semantic.colors.text.white}",
+          "type": "color"
+        },
+        "borderRadius": {
+          "value": "{global.borderRadius.none}",
+          "type": "dimension"
+        },
+        "padding": {
+          "value": "{global.spacing.4}",
+          "type": "dimension"
+        },
+        "fontSize": {
+          "value": "{global.typography.fontSize.sm}",
+          "type": "dimension"
+        },
+        "fontFamily": {
+          "value": "{global.typography.fontFamily.pixel}",
+          "type": "fontFamily"
+        },
+        "effect": {
+          "value": "{semantic.effects.neon.blue}",
+          "type": "effect"
+        }
+      },
+      "operator": {
+        "backgroundColor": {
+          "value": "{global.colors.primitive.pink.600}",
+          "type": "color"
+        },
+        "textColor": {
+          "value": "{semantic.colors.text.white}",
+          "type": "color"
+        },
+        "effect": {
+          "value": "{semantic.effects.neon.pink}",
+          "type": "effect"
+        }
+      },
+      "execute": {
+        "backgroundColor": {
+          "value": "{global.colors.primitive.green.500}",
+          "type": "color"
+        },
+        "textColor": {
+          "value": "{global.colors.primitive.black}",
+          "type": "color"
+        },
+        "effect": {
+          "value": "{semantic.effects.neon.green}",
+          "type": "effect"
+        }
+      },
+      "clear": {
+        "backgroundColor": {
+          "value": "{global.colors.primitive.gray.800}",
+          "type": "color"
+        },
+        "textColor": {
+          "value": "{semantic.colors.text.white}",
+          "type": "color"
+        },
+        "borderColor": {
+          "value": "{global.colors.primitive.gray.600}",
+          "type": "color"
+        },
+        "borderWidth": {
+          "value": "{global.borderWidth.2}",
+          "type": "dimension"
+        }
+      }
+    },
+    "display": {
+      "backgroundColor": {
+        "value": "{global.colors.primitive.black}",
+        "type": "color"
+      },
+      "borderColor": {
+        "value": "{semantic.colors.border.display}",
+        "type": "color"
+      },
+      "borderRadius": {
+        "value": "{global.borderRadius.md}",
+        "type": "dimension"
+      },
+      "padding": {
+        "value": "{global.spacing.4}",
+        "type": "dimension"
+      },
+      "textColor": {
+        "value": "{semantic.colors.text.display}",
+        "type": "color"
+      },
+      "fontSize": {
+        "main": {
+          "value": "{global.typography.fontSize.lg}",
+          "type": "dimension"
+        },
+        "operation": {
+          "value": "{global.typography.fontSize.xs}",
+          "type": "dimension"
+        }
+      }
+    },
+    "container": {
+      "main": {
+        "backgroundColor": {
+          "value": "{semantic.colors.background.primary}",
+          "type": "color"
+        },
+        "borderColor": {
+          "value": "{semantic.colors.border.primary}",
+          "type": "color"
+        },
+        "borderWidth": {
+          "value": "{global.borderWidth.2}",
+          "type": "dimension"
+        },
+        "borderRadius": {
+          "value": "{global.borderRadius.lg}",
+          "type": "dimension"
+        },
+        "maxWidth": {
+          "value": "384px",
+          "type": "dimension",
+          "description": "max-w-sm in Tailwind"
+        }
+      },
+      "header": {
+        "backgroundColor": {
+          "value": "{semantic.colors.background.surface}",
+          "type": "color"
+        },
+        "padding": {
+          "value": "{global.spacing.4}",
+          "type": "dimension"
+        },
+        "borderColor": {
+          "value": "{semantic.colors.border.primary}",
+          "type": "color"
+        }
+      },
+      "grid": {
+        "gap": {
+          "value": "{global.spacing.3}",
+          "type": "dimension"
+        },
+        "columns": {
+          "value": "4",
+          "type": "number"
+        },
+        "padding": {
+          "value": "{global.spacing.4}",
+          "type": "dimension"
+        }
+      }
+    }
+  }
+}
